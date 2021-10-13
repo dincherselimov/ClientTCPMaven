@@ -19,7 +19,7 @@ public class Config {
     FileInputStream FIS;
     {
         try {
-            FIS = new FileInputStream("D:\\Java\\ClientTCPMaven\\src\\main\\java\\ConfigFiles\\config.properties");
+            FIS = new FileInputStream("D:\\Manik\\ClientTCPMaven\\ClientTCPMaven\\src\\main\\java\\ConfigFiles\\config.properties");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
