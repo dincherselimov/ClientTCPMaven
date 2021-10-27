@@ -14,7 +14,7 @@ public class ClientTCPPathTest {
      */
 
     @Test
-    public void testConfigPath() throws IOException {
+    public void testConfigPathP() throws IOException {
         Config config = new Config();
 
         //Getting the path form config.properties
@@ -22,6 +22,20 @@ public class ClientTCPPathTest {
 
         //Compares whether the paths are equal or not
         assertEquals("D:\\Java\\ClientTCPMaven\\src\\main\\java\\ConfigFiles\\",path);
+
+        System.out.println("Test passed!");
+        System.out.println("Paths are equal!");
+    }
+
+    @Test
+    public void testConfigPathN() throws IOException {
+        Config config = new Config();
+
+        //Getting the path form config.properties
+        String path = config.getAbsolute_path();
+
+        //Compares whether the paths are equal or not
+        assertEquals("D:\\Java\\ClientTCPMaven\\src\\main\\java\\SDT\\",path);
 
         System.out.println("Test passed!");
         System.out.println("Paths are equal!");

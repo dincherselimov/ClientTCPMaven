@@ -13,6 +13,7 @@ public class SendFileTestNegative {
     public void sendFileToServerN() throws IOException {
 
         Config config = new Config();
+
         String sent_file = config.getAbsolute_path() + "SSHKey.txt";
 
         String expected_file_to_be_send = "D:\\Manik\\ClientTCP\\Client\\src\\ConfigFiles\\STQ.txt";
